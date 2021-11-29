@@ -1,0 +1,6 @@
+<div class="parent">
+    <h2>Inside Parent Component.</h2>
+    <p>Below is Child Component.</p>
+    <app-child (interact)="parentMethod($event);"></app-child>
+    <p class="strCss" *ngIf="childToParentVar">{{childToParentVar}}</p>
+</div>

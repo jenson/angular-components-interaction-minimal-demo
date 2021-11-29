@@ -1,0 +1,10 @@
+<div class="child">
+    <h2>Inside Child Component.</h2>
+    <div>
+        <p>Component Interaction From Child To Parent.</p>
+        <button (click)="updateParent();">Trigger Parent Component Method.</button>
+        <div [hidden]="!visible">
+        <ng-content></ng-content>
+        </div>
+    </div>
+</div>
